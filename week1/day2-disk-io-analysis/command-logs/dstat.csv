@@ -1,0 +1,12 @@
+"pcp-dstat 6.2.0 CSV Output"
+"Author:","PCP team <pcp@groups.io> and Dag Wieers <dag@wieers.com>",,,,"URL:","https://pcp.io/ and http://dag.wieers.com/home-made/dstat/"
+"Host:","ip-172-31-10-227",,,,"User:","ubuntu"
+"Cmdline:","dstat -cdngyt --output command-logs/dstat.csv 5 5",,,,"Date:","14 Apr 2025 00:20:53 UTC"
+"total usage",,,,,"dsk/total",,"net/total",,"paging",,"system",,"system"
+"total usage:usr","total usage:sys","total usage:idl","total usage:wai","total usage:stl","dsk/total:read","dsk/total:writ","net/total:recv","net/total:send","in","out","int","csw","time"
+,,,,,,,14-04 00:20:53
+1.000,4.000,0,86.999,0,0,127999.020,103.999,499.996,0,0,2402,1283,14-04 00:20:58
+1.000,5.000,0,86.999,1.000,0,128127.153,103.999,491.997,0,0,2379,1294,14-04 00:21:03
+1.000,4.999,0,86.991,1.000,0,128162.153,103.989,499.946,0,0,2417,1302,14-04 00:21:08
+0,5.000,0,87.003,1.000,0,127951.719,104.003,586.017,0,0,2448,1354,14-04 00:21:13
+0,5.000,0,88.000,1.000,0,127999.618,52.000,593.998,0,0,2397,1276,14-04 00:21:18

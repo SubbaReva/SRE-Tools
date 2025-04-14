@@ -1,0 +1,27 @@
+Total DISK READ:         0.00 B/s | Total DISK WRITE:         0.00 B/s
+Current DISK READ:       0.00 B/s | Current DISK WRITE:       0.00 B/s
+    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ:         0.00 B/s | Total DISK WRITE:       124.62 M/s
+Current DISK READ:       0.00 B/s | Current DISK WRITE:     128.35 M/s
+    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  66372 be/4 ubuntu      0.00 B/s   62.31 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66373 be/4 ubuntu      0.00 B/s   62.31 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66405 be/4 root        0.00 B/s    3.98 K/s ?unavailable?  python3 /usr/sbin/iotop -o -b -n 5
+Total DISK READ:         0.00 B/s | Total DISK WRITE:       124.44 M/s
+Current DISK READ:       0.00 B/s | Current DISK WRITE:     119.18 M/s
+    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  66372 be/4 ubuntu      0.00 B/s   62.22 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66373 be/4 ubuntu      0.00 B/s   62.22 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66405 be/4 root        0.00 B/s    3.97 K/s ?unavailable?  python3 /usr/sbin/iotop -o -b -n 5
+Total DISK READ:         0.00 B/s | Total DISK WRITE:       124.66 M/s
+Current DISK READ:       0.00 B/s | Current DISK WRITE:     127.35 M/s
+    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  66372 be/4 ubuntu      0.00 B/s   62.33 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66373 be/4 ubuntu      0.00 B/s   62.33 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66405 be/4 root        0.00 B/s    3.98 K/s ?unavailable?  python3 /usr/sbin/iotop -o -b -n 5
+Total DISK READ:         0.00 B/s | Total DISK WRITE:       211.88 M/s
+Current DISK READ:       0.00 B/s | Current DISK WRITE:     126.88 M/s
+    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  66373 be/4 ubuntu      0.00 B/s   68.41 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66372 be/4 ubuntu      0.00 B/s   47.99 M/s ?unavailable?  stress --hdd 2 --timeout 600
+  66405 be/4 root        0.00 B/s    3.98 K/s ?unavailable?  python3 /usr/sbin/iotop -o -b -n 5
