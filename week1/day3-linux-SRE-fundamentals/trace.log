@@ -1,0 +1,980 @@
+111895 execve("/usr/bin/python3", ["python3", "sim_failing_file.py"], 0x7ffd56497b20 /* 23 vars */) = 0
+111895 brk(NULL)                        = 0x39b44000
+111895 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c42990000
+111895 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+111895 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=21199, ...}) = 0
+111895 mmap(NULL, 21199, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7d1c4298a000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+111895 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+111895 mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7d1c428a1000
+111895 mmap(0x7d1c428b1000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7d1c428b1000
+111895 mmap(0x7d1c42930000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x7d1c42930000
+111895 mmap(0x7d1c42988000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7d1c42988000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+111895 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=113000, ...}) = 0
+111895 mmap(NULL, 110744, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7d1c42885000
+111895 mmap(0x7d1c42887000, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7d1c42887000
+111895 mmap(0x7d1c42899000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7d1c42899000
+111895 mmap(0x7d1c4289f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7d1c4289f000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+111895 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=174336, ...}) = 0
+111895 mmap(NULL, 176256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7d1c42859000
+111895 mmap(0x7d1c4285d000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7d1c4285d000
+111895 mmap(0x7d1c4287a000, 32768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7d1c4287a000
+111895 mmap(0x7d1c42882000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7d1c42882000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+111895 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+111895 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+111895 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+111895 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+111895 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7d1c42600000
+111895 mmap(0x7d1c42628000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7d1c42628000
+111895 mmap(0x7d1c427b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7d1c427b0000
+111895 mmap(0x7d1c427ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7d1c427ff000
+111895 mmap(0x7d1c42805000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7d1c42805000
+111895 close(3)                         = 0
+111895 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c42857000
+111895 arch_prctl(ARCH_SET_FS, 0x7d1c42858080) = 0
+111895 set_tid_address(0x7d1c42858350)  = 111895
+111895 set_robust_list(0x7d1c42858360, 24) = 0
+111895 rseq(0x7d1c428589a0, 0x20, 0, 0x53053053) = 0
+111895 mprotect(0x7d1c427ff000, 16384, PROT_READ) = 0
+111895 mprotect(0x7d1c42882000, 8192, PROT_READ) = 0
+111895 mprotect(0x7d1c4289f000, 4096, PROT_READ) = 0
+111895 mprotect(0x7d1c42988000, 4096, PROT_READ) = 0
+111895 mprotect(0xa27000, 4096, PROT_READ) = 0
+111895 mprotect(0x7d1c429c8000, 8192, PROT_READ) = 0
+111895 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+111895 munmap(0x7d1c4298a000, 21199)    = 0
+111895 getrandom("\x63\x64\xf0\x4d\xff\x98\x79\xfd", 8, GRND_NONBLOCK) = 8
+111895 brk(NULL)                        = 0x39b44000
+111895 brk(0x39b65000)                  = 0x39b65000
+111895 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=3055776, ...}) = 0
+111895 mmap(NULL, 3055776, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7d1c42200000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+111895 read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+111895 read(3, "", 4096)                = 0
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+111895 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=360460, ...}) = 0
+111895 mmap(NULL, 360460, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7d1c425a7000
+111895 close(3)                         = 0
+111895 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+111895 mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x7d1c42850000
+111895 close(3)                         = 0
+111895 futex(0x7d1c4280472c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+111895 getcwd("/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts", 4096) = 65
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883706103}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883722563}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883737034}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883751219}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883773611}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883788039}) = 0
+111895 getrandom("\x0e\xe6\x18\x63\xef\x61\x50\x91\xb6\xe6\x62\xad\xa9\x7e\x3d\xbc\x8c\x1c\x12\x68\xd2\xb0\x80\x1c", 24, GRND_NONBLOCK) = 24
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883829249}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883843869}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=883858444}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=884111263}) = 0
+111895 gettid()                         = 111895
+111895 mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c42100000
+111895 mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c42566000
+111895 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c4282f000
+111895 brk(0x39b86000)                  = 0x39b86000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=886323234}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=886926777}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=886946157}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=886978228}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=887043673}) = 0
+111895 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c4298c000
+111895 brk(0x39ba7000)                  = 0x39ba7000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=887439857}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=887457744}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=887564199}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=887585016}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=888528380}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=888550926}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=888589454}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=888610535}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/sbin/python3", 0x7ffeacede8d0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/local/bin/python3", 0x7ffeacede8d0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/sbin/python3", 0x7ffeacede8d0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/bin/python3", {st_mode=S_IFREG|0755, st_size=8019136, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 openat(AT_FDCWD, "/usr/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 readlink("/usr/bin/python3", "python3.12", 4096) = 10
+111895 readlink("/usr/bin/python3.12", 0x7ffeaced98f0, 4096) = -1 EINVAL (Invalid argument)
+111895 openat(AT_FDCWD, "/usr/bin/python3._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 openat(AT_FDCWD, "/usr/bin/python3.12._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 openat(AT_FDCWD, "/usr/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup.local", 0x7ffeacede8d0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/bin/lib/python312.zip", 0x7ffeacede690, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffeacede6f0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.py", 0x7ffeacede6f0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.pyc", 0x7ffeacede6f0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/os.py", {st_mode=S_IFREG|0644, st_size=39786, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/lib-dynload", 0x7ffeacede6f0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889263101}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889278967}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889306147}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889341011}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889365443}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889382508}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889425644}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889452218}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889472039}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889492672}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889511550}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889709519}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889728102}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889748464}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889770283}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889788561}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889809905}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889825250}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889847103}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889867998}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889886344}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889905478}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889922806}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889942250}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=889964117}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890238031}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890255940}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890453566}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890469994}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890495581}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890518041}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890537157}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890553690}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890593570}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890616057}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890633968}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890654654}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890669864}) = 0
+111895 brk(0x39bc8000)                  = 0x39bc8000
+111895 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0
+111895 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 114
+111895 lseek(3, -60, SEEK_CUR)          = 54
+111895 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 60
+111895 close(3)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890888107}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890905666}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890966563}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=890989140}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=891034440}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=891056618}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=891074831}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=891090842}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=891108023}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffeacede120, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7ffeacede4a0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+111895 fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(3, 0x39ba92d0 /* 202 entries */, 32768) = 6752
+111895 getdents64(3, 0x39ba92d0 /* 0 entries */, 32768) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffeacede4a0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.abi3.so", 0x7ffeacede4a0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.so", 0x7ffeacede4a0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+111895 fcntl(3, F_GETFD)                = 0x1 (flags FD_CLOEXEC)
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=5790, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeacede0e0) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892388609}) = 0
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=5790, ...}) = 0
+111895 read(3, "\313\r\r\n\0\0\0\0\303(\242g\374\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 5791) = 5790
+111895 read(3, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892472436}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892662597}) = 0
+111895 close(3)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892743580}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892826441}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892846609}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892863569}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892894813}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892920093}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892962246}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=892984232}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893018982}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893056601}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893073269}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893229730}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893246031}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893262887}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893282093}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893298404}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893318056}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893336865}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893356014}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893371991}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893387793}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+111895 fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(3, 0x39bb2a90 /* 125 entries */, 32768) = 4224
+111895 getdents64(3, 0x39bb2a90 /* 0 entries */, 32768) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/aliases.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=12408, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeacedd660) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893833226}) = 0
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=12408, ...}) = 0
+111895 read(3, "\313\r\r\n\0\0\0\0\303(\242g==\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 12409) = 12408
+111895 read(3, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893916517}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=893931330}) = 0
+111895 close(3)                         = 0
+111895 brk(0x39be9000)                  = 0x39be9000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894157106}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894174521}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894191842}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894212518}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894230259}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894271751}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894287467}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894311837}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894328202}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894348048}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894367269}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894382833}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894398706}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/utf_8.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=2147, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeacede170) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894587398}) = 0
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=2147, ...}) = 0
+111895 read(3, "\313\r\r\n\0\0\0\0\303(\242g\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 2148) = 2147
+111895 read(3, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894656931}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=894671539}) = 0
+111895 close(3)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=895923917}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=895943293}) = 0
+111895 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=896035357}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=896059101}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=896078916}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=896102515}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=897169636}) = 0
+111895 rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, 8) = 0
+111895 rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, 8) = 0
+111895 rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 rt_sigaction(SIGINT, {sa_handler=0x6e72f0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898157517}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898174614}) = 0
+111895 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898214734}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898239030}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898259027}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898274565}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898313675}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898335074}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898351528}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898367196}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898434172}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898453383}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898470561}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898489610}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898504895}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898542257}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898558914}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898613874}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898628654}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898735695}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=898766735}) = 0
+111895 fcntl(0, F_GETFD)                = 0
+111895 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+111895 ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 lseek(0, 0, SEEK_CUR)            = -1 ESPIPE (Illegal seek)
+111895 ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 fcntl(1, F_GETFD)                = 0
+111895 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+111895 ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 lseek(1, 0, SEEK_CUR)            = -1 ESPIPE (Illegal seek)
+111895 ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 fcntl(2, F_GETFD)                = 0
+111895 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+111895 ioctl(2, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 lseek(2, 0, SEEK_CUR)            = -1 ESPIPE (Illegal seek)
+111895 ioctl(2, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899102714}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899117122}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899140565}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899163399}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899182938}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899200053}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899233649}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899253289}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899270556}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899285361}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899310246}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899331775}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899347739}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899363297}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899399925}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899419030}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899436052}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899455217}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899470587}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899505414}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899521374}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899548353}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899562543}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899578989}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899597119}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899614145}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=899629560}) = 0
+111895 mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1c42000000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900358654}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900379515}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900461692}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900484750}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900504433}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900521144}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900554470}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900572970}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900589560}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900607345}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900628178}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900645247}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900660959}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900684879}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900702952}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900718820}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900740503}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900759427}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900791774}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=900807079}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901521418}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901540194}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901559194}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901581030}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901599611}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901615573}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901672286}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=901688298}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/bin/pyvenv.cfg", 0x7ffeacede0e0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/pyvenv.cfg", 0x7ffeacede140, 0) = -1 ENOENT (No such file or directory)
+111895 geteuid()                        = 1000
+111895 getuid()                         = 1000
+111895 getegid()                        = 1000
+111895 getgid()                         = 1000
+111895 newfstatat(AT_FDCWD, "/home/ubuntu/.local/lib/python3.12/site-packages", 0x7ffeacede310, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+111895 fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(3, 0x39bd57d0 /* 2 entries */, 32768) = 48
+111895 getdents64(3, 0x39bd57d0 /* 0 entries */, 32768) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+111895 fstat(3, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+111895 getdents64(3, 0x39bd57d0 /* 196 entries */, 32768) = 8064
+111895 getdents64(3, 0x39bd57d0 /* 0 entries */, 32768) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/distutils-precedence.pth", {st_mode=S_IFREG|0644, st_size=151, ...}, AT_SYMLINK_NOFOLLOW) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages/distutils-precedence.pth", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=151, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeaceddfb0) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902535777}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902574347}) = 0
+111895 read(3, "import os; var = 'SETUPTOOLS_USE"..., 8192) = 151
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902726633}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902766248}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902788892}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902805507}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=902821949}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+111895 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(4, 0x39bdef00 /* 49 entries */, 32768) = 3104
+111895 getdents64(4, 0x39bdef00 /* 0 entries */, 32768) = 0
+111895 close(4)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+111895 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(4, 0x39bdef00 /* 2 entries */, 32768) = 48
+111895 getdents64(4, 0x39bdef00 /* 0 entries */, 32768) = 0
+111895 close(4)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+111895 fstat(4, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+111895 getdents64(4, 0x39bdef00 /* 196 entries */, 32768) = 8064
+111895 getdents64(4, 0x39bdef00 /* 0 entries */, 32768) = 0
+111895 close(4)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffeaceddbc0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.abi3.so", 0x7ffeaceddbc0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.so", 0x7ffeaceddbc0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0644, st_size=6299, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0644, st_size=6299, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=9998, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedd860) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=903775786}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=9998, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\n_\337d\233\30\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 9999) = 9998
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=903854661}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=903869779}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904040543}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904058881}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904080160}) = 0
+111895 read(3, "", 8192)                = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904114581}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904129155}) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope.interface-6.1-nspkg.pth", {st_mode=S_IFREG|0644, st_size=529, ...}, AT_SYMLINK_NOFOLLOW) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope.interface-6.1-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=529, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeacede010) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904269987}) = 0
+111895 read(3, "import sys, types, os;has_mfs = "..., 8192) = 529
+111895 brk(0x39c0a000)                  = 0x39c0a000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904526557}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904552198}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904589592}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904612042}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904628603}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904644601}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/types.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=14939, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedd990) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904830887}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=14939, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\361*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 14940) = 14939
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904912747}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=904927302}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905128450}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905146443}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905174162}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905195924}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905216076}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905235100}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905252292}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905271924}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905287825}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905303505}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffeacedd7b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.abi3.so", 0x7ffeacedd7b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.so", 0x7ffeacedd7b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=4565, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedd450) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905539188}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=4565, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\246\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 4566) = 4565
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905611499}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905626070}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905699022}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905721624}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905740759}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=905760111}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=906548723}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=906567074}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/warnings.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=23792, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedcde0) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=906772890}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=23792, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\0U\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 23793) = 23792
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=906857447}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=906872617}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907111458}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907129888}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907151586}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907167080}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907185100}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907201541}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907217527}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907250127}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907272496}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907292438}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907308318}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907323745}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907339259}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+111895 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+111895 getdents64(4, 0x39bf0800 /* 14 entries */, 32768) = 456
+111895 getdents64(4, 0x39bf0800 /* 0 entries */, 32768) = 0
+111895 close(4)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/_abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=1643, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedd290) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907658287}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=1643, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242gJ\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 1644) = 1643
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907732188}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=907745870}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908413867}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908455141}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908486677}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908509899}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908529596}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908549806}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908566129}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908582304}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/threading.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=65346, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedd290) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908766033}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=65346, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\333\352\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 65347) = 65346
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908864480}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=908878945}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909258505}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909284762}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909305065}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909324914}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909341099}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909356932}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/functools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=40506, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedcc20) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909555035}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=40506, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\356\224\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0"..., 40507) = 40506
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909631985}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909646373}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909862123}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909885929}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909905387}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909924797}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909944651}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=909960747}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffeacedc910, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.abi3.so", 0x7ffeacedc910, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.so", 0x7ffeacedc910, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/collections/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=73089, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedc5b0) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910215208}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=73089, ...}) = 0
+111895 brk(0x39c38000)                  = 0x39c38000
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\232\314\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 73090) = 73089
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910334107}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910348754}) = 0
+111895 close(4)                         = 0
+111895 brk(0x39c26000)                  = 0x39c26000
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910705538}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910731294}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910764960}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910787484}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910811434}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910831297}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=910990258}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911032110}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911053450}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911075687}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911094541}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911113651}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911130054}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911146204}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/keyword.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=1041, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedbf40) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911336897}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=1041, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g1\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 1042) = 1041
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911409390}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911424004}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911489903}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911506419}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911525151}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911546181}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911564324}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911582705}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911598464}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911614214}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/operator.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=17364, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedbf40) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=911784082}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=17364, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\325*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 17365) = 17364
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913058375}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913076343}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913271905}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913297837}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913318753}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913339543}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913362212}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913381804}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913437932}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913454596}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913487807}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913503427}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913521573}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913542338}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913560391}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913578758}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913594800}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913610888}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/reprlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=9909, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedbf40) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913802489}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=9909, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\251\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 9910) = 9909
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913875253}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=913895216}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914030275}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914047885}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914067642}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914089691}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914108567}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914127807}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914148793}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914164012}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914217830}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914419299}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914780727}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914799217}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914825625}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914847869}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914867229}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914886784}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914907521}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914922877}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914961642}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=914977598}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915200266}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915218867}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915238472}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915259772}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915278701}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915297759}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915313481}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915329354}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 4
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=11751, ...}) = 0
+111895 ioctl(4, TCGETS, 0x7ffeacedcc20) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915537741}) = 0
+111895 lseek(4, 0, SEEK_CUR)            = 0
+111895 fstat(4, {st_mode=S_IFREG|0644, st_size=11751, ...}) = 0
+111895 read(4, "\313\r\r\n\0\0\0\0\303(\242g\5\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 11752) = 11751
+111895 read(4, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915610662}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915624326}) = 0
+111895 close(4)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915749976}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915766772}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915942077}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915958612}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915977167}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=915993150}) = 0
+111895 gettid()                         = 111895
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916044601}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916067178}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916094695}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916111084}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916179991}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916196130}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916215496}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916237588}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916258141}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916274577}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916290324}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916333618}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916349180}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope/__init__.cpython-312-x86_64-linux-gnu.so", 0x7ffeacede0b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope/__init__.abi3.so", 0x7ffeacede0b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope/__init__.so", 0x7ffeacede0b0, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/zope/__init__.py", {st_mode=S_IFREG|0644, st_size=56, ...}, 0) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916502694}) = 0
+111895 read(3, "", 8192)                = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916536636}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916551069}) = 0
+111895 close(3)                         = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/dist-packages", 0x7ffeacede370, 0) = -1 ENOENT (No such file or directory)
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916629947}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916667755}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916687716}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916707717}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916723614}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916739750}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/sitecustomize.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=300, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeaceddc50) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916922589}) = 0
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=300, ...}) = 0
+111895 read(3, "\313\r\r\n\0\0\0\0\273$\26f\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 301) = 300
+111895 read(3, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=916994200}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917026394}) = 0
+111895 close(3)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917073042}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917095110}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917113906}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917132585}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917148237}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917168360}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/apport_python_hook.py", {st_mode=S_IFREG|0644, st_size=8695, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages/apport_python_hook.py", {st_mode=S_IFREG|0644, st_size=8695, ...}, 0) = 0
+111895 openat(AT_FDCWD, "/usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=8876, ...}) = 0
+111895 ioctl(3, TCGETS, 0x7ffeacedd5e0) = -1 ENOTTY (Inappropriate ioctl for device)
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917406750}) = 0
+111895 lseek(3, 0, SEEK_CUR)            = 0
+111895 fstat(3, {st_mode=S_IFREG|0644, st_size=8876, ...}) = 0
+111895 read(3, "\313\r\r\n\0\0\0\0\247\22!f\367!\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 8877) = 8876
+111895 read(3, "", 1)                   = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917479500}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917493909}) = 0
+111895 close(3)                         = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917586283}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917602646}) = 0
+111895 getcwd("/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts", 1024) = 65
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917640572}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917655867}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917673974}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917694798}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917712132}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917730816}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917746518}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=917761577}) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/local/lib/python3.12/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918875335}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918894556}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918919968}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918936181}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918954377}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=918970625}) = 0
+111895 newfstatat(AT_FDCWD, "/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts/sim_failing_file.py", 0x7ffeacedeb70, 0) = -1 ENOENT (No such file or directory)
+111895 newfstatat(AT_FDCWD, "/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+111895 newfstatat(AT_FDCWD, "/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts/sim_failing_file.py", 0x7ffeaceded10, 0) = -1 ENOENT (No such file or directory)
+111895 readlink("sim_failing_file.py", 0x7ffeacecdf50, 4096) = -1 ENOENT (No such file or directory)
+111895 getcwd("/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts", 1024) = 65
+111895 readlink("/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts/sim_failing_file.py", 0x7ffeacecdaf0, 1023) = -1 ENOENT (No such file or directory)
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919174075}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919188043}) = 0
+111895 openat(AT_FDCWD, "/home/ubuntu/SRE-Tools/week1/day3-linux-SRE-fundamentals/scripts/sim_failing_file.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919233747}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919249011}) = 0
+111895 write(2, "python3: can't open file '/home/"..., 149) = 149
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919304690}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919320608}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919398197}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919431241}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919445977}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919460210}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919476737}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=919491361}) = 0
+111895 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, {sa_handler=0x6e72f0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7d1c42645330}, 8) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920722786}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920741535}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920759616}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920774152}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920788085}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=920801998}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=921310356}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=921328094}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=921343078}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=921357289}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922072118}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922089521}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922104235}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922118795}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922661280}) = 0
+111895 munmap(0x7d1c4298c000, 16384)    = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922726701}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922742306}) = 0
+111895 clock_gettime(CLOCK_MONOTONIC, {tv_sec=351163, tv_nsec=922786155}) = 0
+111895 exit_group(2)                    = ?
+111895 +++ exited with 2 +++
